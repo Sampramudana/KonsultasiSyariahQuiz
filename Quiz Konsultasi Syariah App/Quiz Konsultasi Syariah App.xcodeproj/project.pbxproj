@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0B4B76E1F984C95007BE894 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B4B76D1F984C95007BE894 /* MapViewController.swift */; };
+		A0B4B7701F985474007BE894 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B4B76F1F985474007BE894 /* AboutViewController.swift */; };
+		A0F0CD1E1F98453800D6CE42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0CD1D1F98453800D6CE42 /* AppDelegate.swift */; };
+		A0F0CD201F98453800D6CE42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0CD1F1F98453800D6CE42 /* ViewController.swift */; };
+		A0F0CD231F98453800D6CE42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F0CD211F98453800D6CE42 /* Main.storyboard */; };
+		A0F0CD251F98453800D6CE42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F0CD241F98453800D6CE42 /* Assets.xcassets */; };
+		A0F0CD281F98453800D6CE42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F0CD261F98453800D6CE42 /* LaunchScreen.storyboard */; };
+		A0F0CD331F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0CD321F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppTests.swift */; };
+		A0F0CD3E1F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0CD3D1F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppUITests.swift */; };
+		A0F0CD4C1F9848AA00D6CE42 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0CD4B1F9848AA00D6CE42 /* DetailViewController.swift */; };
+		A0F0CD521F98499000D6CE42 /* QuizTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0CD511F98499000D6CE42 /* QuizTableViewController.swift */; };
+		FADFFF0A1F98643C00756A02 /* JustForFun..jpg in Resources */ = {isa = PBXBuildFile; fileRef = FADFFF091F98643C00756A02 /* JustForFun..jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0F0CD2F1F98453800D6CE42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0F0CD121F98453700D6CE42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0F0CD191F98453700D6CE42;
+			remoteInfo = "Quiz Konsultasi Syariah App";
+		};
+		A0F0CD3A1F98453800D6CE42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0F0CD121F98453700D6CE42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0F0CD191F98453700D6CE42;
+			remoteInfo = "Quiz Konsultasi Syariah App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0B4B76D1F984C95007BE894 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A0B4B76F1F985474007BE894 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A0F0CD1A1F98453800D6CE42 /* Quiz Konsultasi Syariah App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quiz Konsultasi Syariah App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F0CD1D1F98453800D6CE42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0F0CD1F1F98453800D6CE42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0F0CD221F98453800D6CE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0F0CD241F98453800D6CE42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0F0CD271F98453800D6CE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0F0CD291F98453800D6CE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F0CD2E1F98453800D6CE42 /* Quiz Konsultasi Syariah AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quiz Konsultasi Syariah AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F0CD321F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_Konsultasi_Syariah_AppTests.swift; sourceTree = "<group>"; };
+		A0F0CD341F98453800D6CE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F0CD391F98453800D6CE42 /* Quiz Konsultasi Syariah AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quiz Konsultasi Syariah AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F0CD3D1F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_Konsultasi_Syariah_AppUITests.swift; sourceTree = "<group>"; };
+		A0F0CD3F1F98453800D6CE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F0CD4B1F9848AA00D6CE42 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A0F0CD511F98499000D6CE42 /* QuizTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewController.swift; sourceTree = "<group>"; };
+		FADFFF091F98643C00756A02 /* JustForFun..jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = JustForFun..jpg; path = "../../../../../../../My Photos/JustForFun..jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0F0CD171F98453700D6CE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F0CD2B1F98453800D6CE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F0CD361F98453800D6CE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0F0CD111F98453700D6CE42 = {
+			isa = PBXGroup;
+			children = (
+				A0F0CD1C1F98453800D6CE42 /* Quiz Konsultasi Syariah App */,
+				A0F0CD311F98453800D6CE42 /* Quiz Konsultasi Syariah AppTests */,
+				A0F0CD3C1F98453800D6CE42 /* Quiz Konsultasi Syariah AppUITests */,
+				A0F0CD1B1F98453800D6CE42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0F0CD1B1F98453800D6CE42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0F0CD1A1F98453800D6CE42 /* Quiz Konsultasi Syariah App.app */,
+				A0F0CD2E1F98453800D6CE42 /* Quiz Konsultasi Syariah AppTests.xctest */,
+				A0F0CD391F98453800D6CE42 /* Quiz Konsultasi Syariah AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0F0CD1C1F98453800D6CE42 /* Quiz Konsultasi Syariah App */ = {
+			isa = PBXGroup;
+			children = (
+				FADFFF091F98643C00756A02 /* JustForFun..jpg */,
+				A0F0CD1D1F98453800D6CE42 /* AppDelegate.swift */,
+				A0F0CD511F98499000D6CE42 /* QuizTableViewController.swift */,
+				A0B4B76D1F984C95007BE894 /* MapViewController.swift */,
+				A0F0CD1F1F98453800D6CE42 /* ViewController.swift */,
+				A0B4B76F1F985474007BE894 /* AboutViewController.swift */,
+				A0F0CD4B1F9848AA00D6CE42 /* DetailViewController.swift */,
+				A0F0CD211F98453800D6CE42 /* Main.storyboard */,
+				A0F0CD241F98453800D6CE42 /* Assets.xcassets */,
+				A0F0CD261F98453800D6CE42 /* LaunchScreen.storyboard */,
+				A0F0CD291F98453800D6CE42 /* Info.plist */,
+			);
+			path = "Quiz Konsultasi Syariah App";
+			sourceTree = "<group>";
+		};
+		A0F0CD311F98453800D6CE42 /* Quiz Konsultasi Syariah AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0F0CD321F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppTests.swift */,
+				A0F0CD341F98453800D6CE42 /* Info.plist */,
+			);
+			path = "Quiz Konsultasi Syariah AppTests";
+			sourceTree = "<group>";
+		};
+		A0F0CD3C1F98453800D6CE42 /* Quiz Konsultasi Syariah AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0F0CD3D1F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppUITests.swift */,
+				A0F0CD3F1F98453800D6CE42 /* Info.plist */,
+			);
+			path = "Quiz Konsultasi Syariah AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0F0CD191F98453700D6CE42 /* Quiz Konsultasi Syariah App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F0CD421F98453800D6CE42 /* Build configuration list for PBXNativeTarget "Quiz Konsultasi Syariah App" */;
+			buildPhases = (
+				A0F0CD161F98453700D6CE42 /* Sources */,
+				A0F0CD171F98453700D6CE42 /* Frameworks */,
+				A0F0CD181F98453700D6CE42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quiz Konsultasi Syariah App";
+			productName = "Quiz Konsultasi Syariah App";
+			productReference = A0F0CD1A1F98453800D6CE42 /* Quiz Konsultasi Syariah App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0F0CD2D1F98453800D6CE42 /* Quiz Konsultasi Syariah AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F0CD451F98453800D6CE42 /* Build configuration list for PBXNativeTarget "Quiz Konsultasi Syariah AppTests" */;
+			buildPhases = (
+				A0F0CD2A1F98453800D6CE42 /* Sources */,
+				A0F0CD2B1F98453800D6CE42 /* Frameworks */,
+				A0F0CD2C1F98453800D6CE42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0F0CD301F98453800D6CE42 /* PBXTargetDependency */,
+			);
+			name = "Quiz Konsultasi Syariah AppTests";
+			productName = "Quiz Konsultasi Syariah AppTests";
+			productReference = A0F0CD2E1F98453800D6CE42 /* Quiz Konsultasi Syariah AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0F0CD381F98453800D6CE42 /* Quiz Konsultasi Syariah AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F0CD481F98453800D6CE42 /* Build configuration list for PBXNativeTarget "Quiz Konsultasi Syariah AppUITests" */;
+			buildPhases = (
+				A0F0CD351F98453800D6CE42 /* Sources */,
+				A0F0CD361F98453800D6CE42 /* Frameworks */,
+				A0F0CD371F98453800D6CE42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0F0CD3B1F98453800D6CE42 /* PBXTargetDependency */,
+			);
+			name = "Quiz Konsultasi Syariah AppUITests";
+			productName = "Quiz Konsultasi Syariah AppUITests";
+			productReference = A0F0CD391F98453800D6CE42 /* Quiz Konsultasi Syariah AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0F0CD121F98453700D6CE42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Hilmy Corp.";
+				TargetAttributes = {
+					A0F0CD191F98453700D6CE42 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					A0F0CD2D1F98453800D6CE42 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A0F0CD191F98453700D6CE42;
+					};
+					A0F0CD381F98453800D6CE42 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A0F0CD191F98453700D6CE42;
+					};
+				};
+			};
+			buildConfigurationList = A0F0CD151F98453700D6CE42 /* Build configuration list for PBXProject "Quiz Konsultasi Syariah App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0F0CD111F98453700D6CE42;
+			productRefGroup = A0F0CD1B1F98453800D6CE42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0F0CD191F98453700D6CE42 /* Quiz Konsultasi Syariah App */,
+				A0F0CD2D1F98453800D6CE42 /* Quiz Konsultasi Syariah AppTests */,
+				A0F0CD381F98453800D6CE42 /* Quiz Konsultasi Syariah AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0F0CD181F98453700D6CE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F0CD281F98453800D6CE42 /* LaunchScreen.storyboard in Resources */,
+				A0F0CD251F98453800D6CE42 /* Assets.xcassets in Resources */,
+				FADFFF0A1F98643C00756A02 /* JustForFun..jpg in Resources */,
+				A0F0CD231F98453800D6CE42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F0CD2C1F98453800D6CE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F0CD371F98453800D6CE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0F0CD161F98453700D6CE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B4B7701F985474007BE894 /* AboutViewController.swift in Sources */,
+				A0F0CD521F98499000D6CE42 /* QuizTableViewController.swift in Sources */,
+				A0F0CD4C1F9848AA00D6CE42 /* DetailViewController.swift in Sources */,
+				A0F0CD201F98453800D6CE42 /* ViewController.swift in Sources */,
+				A0B4B76E1F984C95007BE894 /* MapViewController.swift in Sources */,
+				A0F0CD1E1F98453800D6CE42 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F0CD2A1F98453800D6CE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F0CD331F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F0CD351F98453800D6CE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F0CD3E1F98453800D6CE42 /* Quiz_Konsultasi_Syariah_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0F0CD301F98453800D6CE42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0F0CD191F98453700D6CE42 /* Quiz Konsultasi Syariah App */;
+			targetProxy = A0F0CD2F1F98453800D6CE42 /* PBXContainerItemProxy */;
+		};
+		A0F0CD3B1F98453800D6CE42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0F0CD191F98453700D6CE42 /* Quiz Konsultasi Syariah App */;
+			targetProxy = A0F0CD3A1F98453800D6CE42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0F0CD211F98453800D6CE42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F0CD221F98453800D6CE42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0F0CD261F98453800D6CE42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F0CD271F98453800D6CE42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0F0CD401F98453800D6CE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0F0CD411F98453800D6CE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0F0CD431F98453800D6CE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = "Quiz Konsultasi Syariah App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.Quiz-Konsultasi-Syariah-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0F0CD441F98453800D6CE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = "Quiz Konsultasi Syariah App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.Quiz-Konsultasi-Syariah-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0F0CD461F98453800D6CE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = "Quiz Konsultasi Syariah AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.Quiz-Konsultasi-Syariah-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quiz Konsultasi Syariah App.app/Quiz Konsultasi Syariah App";
+			};
+			name = Debug;
+		};
+		A0F0CD471F98453800D6CE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = "Quiz Konsultasi Syariah AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.Quiz-Konsultasi-Syariah-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quiz Konsultasi Syariah App.app/Quiz Konsultasi Syariah App";
+			};
+			name = Release;
+		};
+		A0F0CD491F98453800D6CE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = "Quiz Konsultasi Syariah AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.Quiz-Konsultasi-Syariah-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quiz Konsultasi Syariah App";
+			};
+			name = Debug;
+		};
+		A0F0CD4A1F98453800D6CE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72C5A4RQ56;
+				INFOPLIST_FILE = "Quiz Konsultasi Syariah AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Hilmy-Fauzi.Quiz-Konsultasi-Syariah-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quiz Konsultasi Syariah App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0F0CD151F98453700D6CE42 /* Build configuration list for PBXProject "Quiz Konsultasi Syariah App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F0CD401F98453800D6CE42 /* Debug */,
+				A0F0CD411F98453800D6CE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0F0CD421F98453800D6CE42 /* Build configuration list for PBXNativeTarget "Quiz Konsultasi Syariah App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F0CD431F98453800D6CE42 /* Debug */,
+				A0F0CD441F98453800D6CE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0F0CD451F98453800D6CE42 /* Build configuration list for PBXNativeTarget "Quiz Konsultasi Syariah AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F0CD461F98453800D6CE42 /* Debug */,
+				A0F0CD471F98453800D6CE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0F0CD481F98453800D6CE42 /* Build configuration list for PBXNativeTarget "Quiz Konsultasi Syariah AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F0CD491F98453800D6CE42 /* Debug */,
+				A0F0CD4A1F98453800D6CE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0F0CD121F98453700D6CE42 /* Project object */;
+}

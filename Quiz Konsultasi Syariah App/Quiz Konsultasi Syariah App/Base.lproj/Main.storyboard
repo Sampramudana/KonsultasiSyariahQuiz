@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="voF-RP-urX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quiz Konsultasi Syariah-->
+        <scene sceneID="cHv-91-NsA">
+            <objects>
+                <tableViewController id="voF-RP-urX" customClass="QuizTableViewController" customModule="Quiz_Konsultasi_Syariah_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kCm-dS-cZa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="NTy-CW-FmH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Quiz Konsultasi Syariah" id="85B-nD-8Fo"/>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellArtikel" id="du5-ZH-BTG">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="du5-ZH-BTG" id="H0u-BO-sAq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="voF-RP-urX" id="ATx-MF-gA7"/>
+                            <outlet property="delegate" destination="voF-RP-urX" id="wbP-pc-ztS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Quiz Konsultasi Syariah" id="lOr-vK-plZ"/>
+                    <connections>
+                        <segue destination="y05-Rd-DAS" kind="modal" identifier="passDataDetail" id="bqu-Vb-Cvf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTp-lF-Kd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="229"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="BfV-QR-N4y">
+            <objects>
+                <viewController storyboardIdentifier="detailView" id="S0W-51-tJY" customClass="MapViewController" customModule="Quiz_Konsultasi_Syariah_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QdL-HM-n50">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3x1-bp-h26">
+                                <rect key="frame" x="0.0" y="67" width="375" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="KOQ-Vc-WKe"/>
+                                </constraints>
+                            </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwL-SJ-9Cq">
+                                <rect key="frame" x="0.0" y="23" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Map Detail" id="dzT-La-nVk">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="LEw-Md-zfa">
+                                            <connections>
+                                                <segue destination="voF-RP-urX" kind="modal" id="ntr-4N-Tn1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3x1-bp-h26" firstAttribute="top" secondItem="xwL-SJ-9Cq" secondAttribute="bottom" id="3Pd-YZ-aBa"/>
+                            <constraint firstItem="xwL-SJ-9Cq" firstAttribute="leading" secondItem="3x1-bp-h26" secondAttribute="leading" id="CKv-eJ-8r4"/>
+                            <constraint firstItem="xwL-SJ-9Cq" firstAttribute="trailing" secondItem="3x1-bp-h26" secondAttribute="trailing" id="aZU-a4-Ssz"/>
+                            <constraint firstItem="3x1-bp-h26" firstAttribute="trailing" secondItem="4Gg-Xk-bua" secondAttribute="trailing" id="arR-BW-TEh"/>
+                            <constraint firstItem="3x1-bp-h26" firstAttribute="bottom" secondItem="4Gg-Xk-bua" secondAttribute="bottom" id="g53-aQ-XWD"/>
+                            <constraint firstItem="xwL-SJ-9Cq" firstAttribute="top" secondItem="4Gg-Xk-bua" secondAttribute="top" constant="3" id="g7Q-KB-HnZ"/>
+                            <constraint firstItem="3x1-bp-h26" firstAttribute="leading" secondItem="4Gg-Xk-bua" secondAttribute="leading" id="gg0-ak-LPF"/>
+                            <constraint firstItem="3x1-bp-h26" firstAttribute="centerX" secondItem="QdL-HM-n50" secondAttribute="centerX" id="h3d-GH-N6b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Gg-Xk-bua"/>
+                    </view>
+                    <connections>
+                        <outlet property="petaWisata" destination="3x1-bp-h26" id="rd5-eQ-gJI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahq-hf-DfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621.5999999999999" y="203.74812593703149"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="I4Y-bD-qHh">
+            <objects>
+                <viewController storyboardIdentifier="detailAbout" id="pxZ-pY-MW3" customClass="AboutViewController" customModule="Quiz_Konsultasi_Syariah_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VEs-aO-ydX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRQ-W6-xRO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="ABOUT APP" id="9wW-4t-isn">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="kMn-ek-HiY">
+                                            <connections>
+                                                <segue destination="voF-RP-urX" kind="modal" id="Ikz-XW-VnD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Developer :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf9-x0-Fm4">
+                                <rect key="frame" x="16" y="290" width="192" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uK-Yh-dfY">
+                                <rect key="frame" x="16" y="365" width="192" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Github :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxo-fY-d2D">
+                                <rect key="frame" x="16" y="451" width="192" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instagram :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l94-Lx-H6l">
+                                <rect key="frame" x="16" y="539" width="192" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nandhito Sam Pramudana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bp9-3e-nqX">
+                                <rect key="frame" x="75" y="322" width="238" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sampramudana12@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1T-0q-9kI">
+                                <rect key="frame" x="68" y="400" width="238" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sampramudana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv6-rh-HbU">
+                                <rect key="frame" x="61" y="486" width="238" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sam.pramudana_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxk-sR-pjY">
+                                <rect key="frame" x="61" y="584" width="238" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JustForFun..jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r8b-cF-Q1q">
+                                <rect key="frame" x="68" y="76" width="238" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="cNC-2G-bJ0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laa-W8-VWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781.5999999999999" y="919.79010494752629"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ahy-IC-Cd8">
+            <objects>
+                <viewController id="y05-Rd-DAS" customClass="DetailViewController" customModule="Quiz_Konsultasi_Syariah_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hvT-cR-cCF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pZd-Ea-lZT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Detail" id="mkc-H6-iB2">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="JS9-Kh-sIU">
+                                            <connections>
+                                                <segue destination="voF-RP-urX" kind="modal" id="Ff8-6y-k2P"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NA4-Tk-Sj6">
+                                <rect key="frame" x="37" y="151" width="300" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Go Pay itu Riba?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2z-DW-TJK">
+                                <rect key="frame" x="16" y="88" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Y2p-CW-NNj"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgGambar" destination="NA4-Tk-Sj6" id="0Fb-X0-2YV"/>
+                        <outlet property="labelJudul" destination="h2z-DW-TJK" id="wD2-sf-zq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Wa-BE-lgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2272.8000000000002" y="201.94902548725639"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="JustForFun..jpg" width="480" height="480"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ikz-XW-VnD"/>
+    </inferredMetricsTieBreakers>
+</document>
